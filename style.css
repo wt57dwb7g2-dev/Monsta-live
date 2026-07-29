@@ -130,3 +130,25 @@ footer {
 .card:hover {
   transform: scale(1.03);
 }
+.card {
+  background: #1a1a22;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(230, 0, 126, 0.4);
+}
+
+.live {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ff0033;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
