@@ -105,3 +105,15 @@ footer {
   color: #ff3b3b;
   font-weight: bold;
 }
+.search {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 15px;
+  background: #222;
+  color: white;
+}
+
+.search::placeholder {
+  color: #999;
+}
