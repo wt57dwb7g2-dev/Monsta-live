@@ -1,0 +1,67 @@
+# Monsta Live
+
+Monsta Live is a premium 18+ live streaming platform where creators can stream live, build communities, and earn money through subscriptions, tips, gifts, and private shows.
+
+## Features
+
+- 🔴 Live HD streaming
+- 💬 Real-time chat
+- 💰 Virtual tokens and tipping
+- 👑 Creator subscriptions
+- 🔒 Secure authentication
+- 🪪 Creator verification (KYC)
+- 📊 Creator analytics dashboard
+- 💳 Mobile Money, Visa, Mastercard, Flutterwave & Paystack support
+- 📱 Responsive web application
+- 🛡️ Admin dashboard and content moderation
+
+## Tech Stack
+
+### Frontend
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+### Backend
+- NestJS
+- Node.js
+
+### Database
+- PostgreSQL
+
+### Streaming
+- LiveKit
+
+### Storage
+- Cloudflare R2
+
+### Deployment
+- Docker
+- AWS / DigitalOcean
+
+## Project Status
+
+🚧 Currently under active development.
+
+## Roadmap
+
+- [x] Project setup
+- [ ] Authentication
+- [ ] Homepage
+- [ ] User Dashboard
+- [ ] Creator Dashboard
+- [ ] Live Streaming
+- [ ] Wallet System
+- [ ] Mobile Money Integration
+- [ ] Token Purchases
+- [ ] Private Shows
+- [ ] Subscription System
+- [ ] Admin Dashboard
+- [ ] Mobile Apps
+
+## License
+
+This project is proprietary. All rights reserved.
+
+© 2026 Monsta Live
