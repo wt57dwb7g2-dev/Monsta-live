@@ -117,3 +117,16 @@ footer {
 .search::placeholder {
   color: #999;
 }
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
