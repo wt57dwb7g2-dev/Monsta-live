@@ -1,90 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monsta Live - Stream</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Watch Stream | Monsta Live</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header class="stream-header">
-    <h1>🔴 Monsta Live</h1>
+<!-- ===========================
+     HEADER
+============================ -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Monsta <span>Live</span>
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
 </header>
+
+<!-- ===========================
+     STREAM PAGE
+============================ -->
 
 <section class="stream-page">
 
     <div class="video-player">
-        <span class="live-badge">LIVE</span>
 
-        <video controls poster="https://picsum.photos/900/500">
-            <source src="sample.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+        <span class="live-badge">
+            🔴 LIVE
+        </span>
+
+        <video controls poster="https://picsum.photos/1200/650?40">
+
+            <source
+                src="assets/sample.mp4"
+                type="video/mp4">
+
+            Your browser does not support HTML5 video.
+
         </video>
+
     </div>
 
     <div class="stream-details">
-        <h2>Featured Live Stream</h2>
-        <p>👤 GamerX</p>
-        <p>🔴 2.4K Watching</p>
 
-        <button class="follow-btn">Follow</button>
-        <button class="like-btn">❤️ Like</button>
-        <button class="watch-btn">Watch Live</button>
+        <h2>
+            Battle Arena Championship
+        </h2>
+
+        <p>
+            🎮 Streamer:
+            <strong>GamerX</strong>
+        </p>
+
+        <p>
+            👀 Watching:
+            <strong>2,458</strong>
+        </p>
+
+        <p>
+            ❤️ Likes:
+            <strong id="likeCount">125</strong>
+        </p>
+
+        <div class="stream-actions">
+
+            <button class="follow-btn">
+
+                Follow
+
+            </button>
+
+            <button
+                class="like-btn"
+                id="likeBtn">
+
+                ❤️ Like
+
+            </button>
+
+            <button class="watch-btn">
+
+                Share Stream
+
+            </button>
+
+        </div>
+
     </div>
 
-    <section class="live-chat">
+<!-- ===========================
+     LIVE CHAT
+============================ -->
 
-        <h2>💬 Live Chat</h2>
+<section class="live-chat">
 
-        <div class="chat-box" id="chatBox">
-            <p><strong>Alex:</strong> Awesome stream! 🔥</p>
-            <p><strong>Sarah:</strong> Hello everyone 👋</p>
-        </div>
+    <h2>
 
-        <div class="chat-input">
-            <input
-                type="text"
-                id="chatMessage"
-                placeholder="Type a message..."
-            >
-            <button id="sendBtn">Send</button>
-        </div>
+        💬 Live Chat
 
-    </section>
+    </h2>
 
-    <section class="recommended">
+    <div
+        class="chat-box"
+        id="chatBox">
 
-        <h2>Recommended Streams</h2>
+        <p><strong>Alex:</strong> This match is amazing! 🔥</p>
 
-        <div class="recommend-grid">
+        <p><strong>Sarah:</strong> Hello everyone 👋</p>
 
-            <div class="recommend-card">
-                <img src="https://picsum.photos/300/180?31" alt="Stream">
-                <h3>Battle Arena</h3>
-                <p>🔴 8.2K Watching</p>
-            </div>
+        <p><strong>Mike:</strong> Let's go! 🎮</p>
 
-            <div class="recommend-card">
-                <img src="https://picsum.photos/300/180?32" alt="Stream">
-                <h3>Music Night</h3>
-                <p>🔴 4.9K Watching</p>
-            </div>
+        <p><strong>Emma:</strong> GG ❤️</p>
 
-            <div class="recommend-card">
-                <img src="https://picsum.photos/300/180?33" alt="Stream">
-                <h3>Football Live</h3>
-                <p>🔴 15K Watching</p>
-            </div>
+    </div>
 
-        </div>
+    <div class="chat-input">
 
-    </section>
+        <input
+
+            type="text"
+
+            id="chatMessage"
+
+            placeholder="Type your message..."
+
+        >
+
+        <button
+
+            id="sendBtn">
+
+            Send
+
+        </button>
+
+    </div>
 
 </section>
+<!-- ===========================
+     RECOMMENDED STREAMS
+============================ -->
+
+<section class="recommended">
+
+    <h2 class="section-title">
+
+        Recommended Streams
+
+    </h2>
+
+    <div class="recommend-grid">
+
+        <div class="recommend-card">
+
+            <img
+                src="https://picsum.photos/500/300?51"
+                alt="Recommended Stream">
+
+            <h3>
+
+                Music Night Live
+
+            </h3>
+
+            <p>
+
+                🎵 DJ Nova • 👀 4.8K Watching
+
+            </p>
+
+        </div>
+
+        <div class="recommend-card">
+
+            <img
+                src="https://picsum.photos/500/300?52"
+                alt="Recommended Stream">
+
+            <h3>
+
+                Football Highlights
+
+            </h3>
+
+            <p>
+
+                ⚽ SportsZone • 👀 8.3K Watching
+
+            </p>
+
+        </div>
+
+        <div class="recommend-card">
+
+            <img
+                src="https://picsum.photos/500/300?53"
+                alt="Recommended Stream">
+
+            <h3>
+
+                Coding With Friends
+
+            </h3>
+
+            <p>
+
+                💻 CodeMaster • 👀 2.9K Watching
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+<!-- ===========================
+     FOOTER
+============================ -->
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div class="footer-column">
+
+            <h3>
+
+                Monsta Live
+
+            </h3>
+
+            <p>
+
+                Watch live streams, chat with creators,
+                and discover amazing content.
+
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Explore
+
+            </h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="profile.html">Profile</a>
+
+            <a href="login.html">Login</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Support
+
+            </h3>
+
+            <a href="#">Help Center</a>
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms of Service</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Monsta Live. All rights reserved.
+
+    </div>
+
+</footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
