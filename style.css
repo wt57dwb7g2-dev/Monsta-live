@@ -401,7 +401,23 @@ header{
 .creator-followers{
     color:#9f9f9f;
     font-size:14px;
-}/* ==========================================================
+}
+.follow-btn{
+    background:#ff0050;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:10px 20px;
+    font-weight:bold;
+    cursor:pointer;
+    width:auto;
+    margin-top:0;
+}
+
+.follow-btn:hover{
+    background:#ff3377;
+}
+/* ==========================================================
    STREAM PAGE
 ========================================================== */
 
