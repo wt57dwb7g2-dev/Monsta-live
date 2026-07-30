@@ -230,3 +230,41 @@ nav{
     gap:12px;
 }
 }
+.featured{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+    background:#1b1b1f;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.featured img{
+    width:100%;
+    display:block;
+}
+
+.featured-content{
+    padding:20px;
+    text-align:center;
+}
+
+.live-badge{
+    display:inline-block;
+    background:red;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.watch-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#ff008c;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:25px;
+}
