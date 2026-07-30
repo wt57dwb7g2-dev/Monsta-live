@@ -527,3 +527,68 @@ body{
 .watch-btn:hover{
     background:#cc0000;
 }
+.live-chat{
+    background:#1a1a1a;
+    margin-top:30px;
+    padding:20px;
+    border-radius:15px;
+}
+
+.chat-box{
+    background:#111;
+    height:250px;
+    overflow-y:auto;
+    padding:15px;
+    border-radius:10px;
+    margin:15px 0;
+}
+
+.chat-box p{
+    color:white;
+    margin:10px 0;
+}
+
+.live-chat input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+.recommended{
+    margin:50px 0;
+}
+
+.recommend-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.recommend-card{
+    background:#1a1a1a;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.recommend-card:hover{
+    transform:translateY(-5px);
+}
+
+.recommend-card img{
+    width:100%;
+    display:block;
+}
+
+.recommend-card h3{
+    color:white;
+    margin:15px;
+}
+
+.recommend-card p{
+    color:#bbb;
+    margin:0 15px 15px;
+}
