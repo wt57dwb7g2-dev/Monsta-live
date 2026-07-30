@@ -1050,7 +1050,7 @@ input:focus{
     background:#ff3377;
 }
 
-.watch-btn{
+.watch.watch-btn{
     display:block;
     width:100%;
     padding:12px;
@@ -1061,6 +1061,18 @@ input:focus{
     text-decoration:none;
     font-weight:bold;
     box-sizing:border-box;
+    background:#ff0050;
+    color:#fff;
+}
+
+.follow-btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    background:#ff008c;
+    color:#fff;
+    cursor:pointer;
 }
 
 .watch-btn{
