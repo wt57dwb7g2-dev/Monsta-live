@@ -999,3 +999,53 @@ input:focus{
    END OF FILE
 ========================================================== */
 }
+/* ===========================
+   Creator Dashboard
+=========================== */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.stat-card{
+    background:#1f1f23;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.stat-card h2{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#ff0050;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.dashboard-actions{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px 30px 40px;
+}
+
+.dashboard-btn{
+    background:#ff0050;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.dashboard-btn:hover{
+    background:#ff3377;
+}
