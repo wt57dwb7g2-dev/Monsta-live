@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18+ Age Verification</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="age-box">
+    <h1>🔞 Adults Only</h1>
+
+    <p>
+        Monsta Live is intended only for users who are
+        18 years of age or older.
+    </p>
+
+    <button onclick="enterSite()">I am 18 or Older</button>
+
+    <button onclick="leaveSite()" class="exit-btn">
+        I am Under 18
+    </button>
+</div>
+
+<script>
+function enterSite(){
+    localStorage.setItem("ageVerified","true");
+    window.location.href="index.html";
+}
+
+function leaveSite(){
+    window.location.href="https://www.google.com";
+}
+</script>
+
+</body>
+</html>
