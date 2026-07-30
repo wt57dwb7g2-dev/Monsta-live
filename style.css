@@ -268,3 +268,20 @@ nav{
     padding:12px 24px;
     border-radius:25px;
 }
+.featured {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.featured-content h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.featured-content p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.watch-btn:hover {
+    background: #e6007a;
+}
