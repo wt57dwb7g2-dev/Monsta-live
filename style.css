@@ -1080,7 +1080,7 @@ input:focus{
     font-weight:bold;
     box-sizing:border-box;
 }
-follow-btn{
+.follow-btn{
     display:inline-block;
     width:auto;
     padding:12px 20px;
@@ -1094,6 +1094,6 @@ follow-btn{
     color:#fff;
 }
 
-.watch-btn:hover{
+.follow-btn:hover{
     background:#ff3377;
 }
