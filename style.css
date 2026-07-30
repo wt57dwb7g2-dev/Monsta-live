@@ -1,17 +1,38 @@
 
-const form = document.getElementById("goLiveForm");
+/* AGE VERIFICATION */
 
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
+.age-box{
+    max-width:500px;
+    margin:120px auto;
+    background:#18181b;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
 
-    const title = document.getElementById("streamTitle").value;
+.age-box h1{
+    color:#ff0050;
+    margin-bottom:20px;
+}
 
-    if (title.trim() === "") {
-        alert("Please enter a stream title.");
-        return;
-    }
+.age-box p{
+    color:#ddd;
+    margin-bottom:30px;
+    line-height:1.6;
+}
 
-    alert("🔴 Your stream is now LIVE!");
+.age-box button{
+    width:100%;
+    padding:16px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    background:#ff0050;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
 
-    window.location.href = "live.html";
-});
+.exit-btn{
+    background:#444;
+}
