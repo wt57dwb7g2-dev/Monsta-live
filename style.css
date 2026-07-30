@@ -4,11 +4,17 @@
   box-sizing: border-box;
 }
 header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
     display:flex;
     flex-direction:column;
     gap:15px;
-    padding:15px;
+
     background:#111116;
+    padding:15px;
+    border-bottom:1px solid #222;
 }
 
 .logo{
@@ -18,30 +24,37 @@ header{
     text-align:center;
 }
 
-.search-box input{
+.search{
     width:100%;
-    padding:12px;
+    padding:12px 16px;
     border:none;
-    border-radius:25px;
+    border-radius:30px;
     font-size:16px;
+    outline:none;
 }
 
 nav{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
+    overflow-x:auto;
+    gap:18px;
+
+    scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    font-size:16px;
+    white-space:nowrap;
+    font-size:15px;
 }
 
 .signup{
     background:#ff008c;
-    padding:10px 18px;
+    padding:8px 16px;
     border-radius:20px;
 }
 body {
