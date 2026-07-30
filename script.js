@@ -94,3 +94,25 @@ if (signupForm) {
         window.location.href = "login.html";
     });
 }
+// ==========================
+// Search Streams
+// ==========================
+
+const searchInput = document.querySelector('.search-box input');
+const streamCards = document.querySelectorAll('.stream-card');
+
+if (searchInput) {
+    searchInput.addEventListener('keyup', () => {
+        const search = searchInput.value.toLowerCase();
+
+        streamCards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+
+            if (text.includes(search)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+}
