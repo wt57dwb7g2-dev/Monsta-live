@@ -1,16 +1,14 @@
-const form = document.getElementById("goLiveForm");
-
-form.addEventListener("submit", function(e) {
+document.getElementById("goLiveForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const title = document.getElementById("streamTitle").value;
+    const category = document.getElementById("category").value;
 
-    if (title.trim() === "") {
-        alert("Please enter a stream title.");
-        return;
-    }
+    alert(
+        "🔴 You are now LIVE!\n\n" +
+        "Title: " + title +
+        "\nCategory: " + category
+    );
 
-    alert("🔴 Your stream is now LIVE!");
-
-    window.location.href = "live.html";
+    this.reset();
 });
