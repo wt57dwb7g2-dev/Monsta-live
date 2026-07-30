@@ -298,3 +298,46 @@ nav{
 .watch-btn:hover {
     background: #e6007a;
 }
+.creator{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:15px;
+}
+
+.avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.creator-info{
+    flex:1;
+}
+
+.creator-info h3{
+    color:white;
+    margin:0;
+    font-size:18px;
+}
+
+.creator-info p{
+    color:#aaa;
+    margin:4px 0;
+    font-size:14px;
+}
+
+.follow-btn{
+    background:#ff008c;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:25px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.follow-btn:hover{
+    background:#ff2da0;
+}
