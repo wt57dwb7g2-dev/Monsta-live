@@ -1,265 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Monsta Live</title>
+    <meta charset="UTF-8">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b0b0f;
-      color: white;
-    }
-    <script src="script.js"></script>
-<nav class="bottom-nav">
-    <a href="#">🏠<span>Home</span></a>
-    <a href="#">📺<span>Live</span></a>
-    <a href="#">🔍<span>Search</span></a>
-    <a href="#">👤<span>Profile</span></a>
-</nav>
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background: #111116;
-    }
+    <title>Monsta Live</title>
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+    <link rel="stylesheet" href="style.css">
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 15px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #bbbbbb;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #e6007e;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #111116;
-      color: #888888;
-    }
-  </style>
 </head>
 
 <body>
 
+<!-- ===========================
+     HEADER
+============================ -->
+
 <header>
-    <div class="logo">MONSTA LIVE</div>
 
-    <input
-        type="text"
-        class="search"
-        placeholder="🔍 Search creators..."
-    >
+    <div class="container navbar">
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Live</a>
-        <a href="#">Categories</a>
-        <a href="#">Creators</a>
-        <a href="#">Login</a>
-        <a href="#" class="signup">Sign Up</a>
-    </nav>
+        <a href="index.html" class="logo">
+            Monsta <span>Live</span>
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="#featured">Featured</a>
+                </li>
+
+                <li>
+                    <a href="#categories">Categories</a>
+                </li>
+
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search streams..."
+            >
+
+            <button>🔍</button>
+
+        </div>
+
+    </div>
+
 </header>
-<section class="featured">
-    <img src="https://picsum.photos/900/450" alt="Featured Live Stream">
 
-    <div class="featured-content">
-        <span class="live-badge">🔴 LIVE</span>
+<!-- ===========================
+     HERO
+============================ -->
 
-        <h2>Featured Live Stream</h2>
+<section class="hero">
 
-        <p>Watch the hottest creators live on Monsta Live.</p>
+    <div class="hero-content">
 
-        <a href="#" class="watch-btn">Watch Now</a>
+        <h1>
+            Stream.
+            Watch.
+            Connect.
+        </h1>
+
+        <p>
+
+            Discover live creators from around
+            the world on Monsta Live.
+
+        </p>
+
+        <a
+            href="#featured"
+            class="hero-btn">
+
+            Watch Live
+
+        </a>
+
     </div>
+
 </section>
-  <section class="hero">
-    <h1>Welcome to Monsta Live</h1>
 
-    <p>
-      Connect with creators, watch live streams,
-      build communities, and experience live entertainment.
-    </p>
+<!-- ===========================
+     FEATURED STREAMS
+============================ -->
 
-    <a href="#" class="button">Join Monsta Live</a>
-  </section>
+<section
+    id="featured"
+    class="container">
 
-  <section class="section">
-  <h2>🔥 Live Now</h2>
+    <h2 class="section-title">
 
-  <div class="live-grid">
+        🔴 Featured Live Streams
 
-    <div class="live-card">
-      <img src="https://picsum.photos/300/180?1" alt="Live Stream">
-      <div class="creator">
-        <img src="https://picsum.photos/50?1" alt="Creator">
-        <div class="creator-info">
-          <h3>Gaming King</h3>
-          <p>12.5K watching</p>
+    </h2>
+
+    <div class="stream-grid">
+
+        <!-- Stream 1 -->
+
+        <div class="stream-card">
+
+            <div class="stream-thumbnail">
+
+                <img
+                    src="https://picsum.photos/500/300?1"
+                    alt="Gaming Stream">
+
+                <span class="live-tag">
+
+                    LIVE
+
+                </span>
+
+                <span class="viewers">
+
+                    👀 2.4K
+
+                </span>
+
+            </div>
+
+            <div class="stream-info">
+
+                <h3>
+
+                    Battle Arena
+
+                </h3>
+
+                <p>
+
+                    GamerX
+
+                </p>
+
+                <button
+                    class="follow-btn">
+
+                    Follow
+
+                </button>
+
+            </div>
+
         </div>
-        <button class="follow-btn">Follow</button>
-      </div>
-    </div>
 
-    <div class="live-card">
-      <img src="https://picsum.photos/300/180?2" alt="Live Stream">
-      <div class="creator">
-        <img src="https://picsum.photos/50?2" alt="Creator">
-        <div class="creator-info">
-          <h3>Pro Streamer</h3>
-          <p>8.9K watching</p>
+        <!-- Stream 2 -->
+
+        <div class="stream-card">
+
+            <div class="stream-thumbnail">
+
+                <img
+                    src="https://picsum.photos/500/300?2"
+                    alt="Music Stream">
+
+                <span class="live-tag">
+
+                    LIVE
+
+                </span>
+
+                <span class="viewers">
+
+                    👀 5.7K
+
+                </span>
+
+            </div>
+
+            <div class="stream-info">
+
+                <h3>
+
+                    Music Night
+
+                </h3>
+
+                <p>
+
+                    DJ Nova
+
+                </p>
+
+                <button
+                    class="follow-btn">
+
+                    Follow
+
+                </button>
+
+            </div>
+
         </div>
-        <button class="follow-btn">Follow</button>
-      </div>
-    </div>
+                <!-- Stream 3 -->
 
-  </div>
-</section>p
-  <div class="cards">
->
-<div class="card">
+        <div class="stream-card">
 
-    <img src="https://picsum.photos/300/170?random=1">
+            <div class="stream-thumbnail">
 
-    <div class="creator">
+                <img
+                    src="https://picsum.photos/500/300?3"
+                    alt="Football Stream">
 
-        <img class="avatar"
-             src="https://i.pravatar.cc/60?img=12">
+                <span class="live-tag">
+                    LIVE
+                </span>
 
-        <div class="creator-info">
-            <h3>🎮 GamerX ✔️</h3>
-            <p>Playing the latest games</p>
-            <span class="live">🔴 LIVE • 2.4K Watching</span>
+                <span class="viewers">
+                    👀 12K
+                </span>
+
+            </div>
+
+            <div class="stream-info">
+
+                <h3>
+                    Football Live
+                </h3>
+
+                <p>
+                    SportsZone
+                </p>
+
+                <button class="follow-btn">
+                    Follow
+                </button>
+
+            </div>
+
         </div>
 
-        <button class="follow-btn">Follow</button>
+        <!-- Stream 4 -->
+
+        <div class="stream-card">
+
+            <div class="stream-thumbnail">
+
+                <img
+                    src="https://picsum.photos/500/300?4"
+                    alt="Podcast Stream">
+
+                <span class="live-tag">
+                    LIVE
+                </span>
+
+                <span class="viewers">
+                    👀 3.1K
+                </span>
+
+            </div>
+
+            <div class="stream-info">
+
+                <h3>
+                    Tech Podcast
+                </h3>
+
+                <p>
+                    CodeMaster
+                </p>
+
+                <button class="follow-btn">
+                    Follow
+                </button>
+
+            </div>
+
+        </div>
 
     </div>
 
-</div>
-    <div class="card">
-      <img src="https://picsum.photos/300/170?random=2" alt="Stream">
-      <h3>🎤 MusicQueen</h3>
-      <p>Live music performance</p>
-      <span class="live">🔴 LIVE • 1.8K Watching</span>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/300/170?random=3" alt="Stream">
-      <h3>💬 NightTalk</h3>
-      <p>Just chatting with fans</p>
-      <span class="live">🔴 LIVE • 930 Watching</span>
-    </div>
-
-  </div>
 </section>
-<section class="categories">
 
-    <h2>Browse Categories</h2>
+<!-- ===========================
+     CATEGORIES
+============================ -->
+
+<section
+    id="categories"
+    class="container">
+
+    <h2 class="section-title">
+
+        Browse Categories
+
+    </h2>
 
     <div class="category-grid">
 
-        <div class="category">🎮 Gaming</div>
+        <div class="category-card">
 
-        <div class="category">💬 Just Chatting</div>
+            <div class="category-icon">
+                🎮
+            </div>
 
-        <div class="category">🎵 Music</div>
+            <h3>
+                Gaming
+            </h3>
 
-        <div class="category">💃 Dance</div>
+        </div>
 
-        <div class="category">🏋️ Fitness</div>
+        <div class="category-card">
 
-        <div class="category">🍳 Cooking</div>
+            <div class="category-icon">
+                🎵
+            </div>
 
-        <div class="category">🎨 Art</div>
+            <h3>
+                Music
+            </h3>
 
-        <div class="category">💻 Tech</div>
+        </div>
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                ⚽
+            </div>
+
+            <h3>
+                Sports
+            </h3>
+
+        </div>
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                💻
+            </div>
+
+            <h3>
+                Technology
+            </h3>
+
+        </div>
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                🎨
+            </div>
+
+            <h3>
+                Art
+            </h3>
+
+        </div>
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                🍳
+            </div>
+
+            <h3>
+                Cooking
+            </h3>
+
+        </div>
 
     </div>
 
 </section>
-<section class="section">
-    <h2>Discover Live Creators</h2>
-    <p>Find your favorite creators and join the community.</p>
+
+<!-- ===========================
+     TRENDING CREATORS
+============================ -->
+
+<section class="container">
+
+    <h2 class="section-title">
+
+        Trending Creators
+
+    </h2>
+
+    <div class="creator-list">
+
+        <div class="creator-card">
+
+            <div class="creator-left">
+
+                <img
+                    src="https://picsum.photos/100?11"
+                    alt="Creator">
+
+                <div>
+
+                    <div class="creator-name">
+                        GamerX
+                    </div>
+
+                    <div class="creator-followers">
+                        450K Followers
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="follow-btn">
+
+                Follow
+
+            </button>
+
+        </div>
+                <div class="creator-card">
+
+            <div class="creator-left">
+
+                <img
+                    src="https://picsum.photos/100?12"
+                    alt="Creator">
+
+                <div>
+
+                    <div class="creator-name">
+                        DJ Nova
+                    </div>
+
+                    <div class="creator-followers">
+                        320K Followers
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="follow-btn">
+                Follow
+            </button>
+
+        </div>
+
+        <div class="creator-card">
+
+            <div class="creator-left">
+
+                <img
+                    src="https://picsum.photos/100?13"
+                    alt="Creator">
+
+                <div>
+
+                    <div class="creator-name">
+                        SportsZone
+                    </div>
+
+                    <div class="creator-followers">
+                        1.1M Followers
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="follow-btn">
+                Follow
+            </button>
+
+        </div>
+
+        <div class="creator-card">
+
+            <div class="creator-left">
+
+                <img
+                    src="https://picsum.photos/100?14"
+                    alt="Creator">
+
+                <div>
+
+                    <div class="creator-name">
+                        CodeMaster
+                    </div>
+
+                    <div class="creator-followers">
+                        870K Followers
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="follow-btn">
+                Follow
+            </button>
+
+        </div>
+
+    </div>
+
 </section>
-<section class="trending-creators">
-    <h2>⭐ Trending Creators</h2>
 
-    <div class="creator-card">
-        <img src="https://picsum.photos/80?10" alt="Creator">
-        <div class="creator-info">
-            <h3>Alex Gaming</h3>
-            <p>520K Followers</p>
-        </div>
-        <button class="follow-btn">Follow</button>
-    </div>
+<!-- ===========================
+     FOOTER
+============================ -->
 
-    <div class="creator-card">
-        <img src="https://picsum.photos/80?11" alt="Creator">
-        <div class="creator-info">
-            <h3>Luna Music</h3>
-            <p>315K Followers</p>
-        </div>
-        <button class="follow-btn">Follow</button>
-    </div>
-
-    <div class="creator-card">
-        <img src="https://picsum.photos/80?12" alt="Creator">
-        <div class="creator-info">
-            <h3>NightWolf</h3>
-            <p>842K Followers</p>
-        </div>
-        <button class="follow-btn">Follow</button>
-    </div>
-</section>
 <footer>
-    © 2026 Monsta Live. All rights reserved.
+
+    <div class="footer-grid">
+
+        <div class="footer-column">
+
+            <h3>Monsta Live</h3>
+
+            <p>
+                Watch live streams, discover creators,
+                and connect with the community.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <a href="index.html">Home</a>
+            <a href="#featured">Featured</a>
+            <a href="#categories">Categories</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Account</h3>
+
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="profile.html">Profile</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>Email: support@monstalive.com</p>
+            <p>Follow us on social media</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Monsta Live. All Rights Reserved.
+        </p>
+
+    </div>
+
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
