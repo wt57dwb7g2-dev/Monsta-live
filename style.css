@@ -474,3 +474,56 @@ nav{
 body{
     padding-bottom:80px;
 }
+.stream-header{
+    background:#111;
+    padding:20px;
+    text-align:center;
+}
+
+.stream-header h1{
+    color:#fff;
+}
+
+.stream-page{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.video-player img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+}
+
+.stream-details{
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+.stream-details h2{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.stream-details p{
+    color:#bbb;
+    margin:8px 0;
+}
+
+.watch-btn{
+    background:#ff0000;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.watch-btn:hover{
+    background:#cc0000;
+}
