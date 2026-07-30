@@ -1051,7 +1051,7 @@ input:focus{
 .dashboard-btn:hover{
     background:#ff3377;
 }
-.follow-btn,
+
 .watch-btn{
     display:block;
     width:100%;
@@ -1064,7 +1064,15 @@ input:focus{
     font-weight:bold;
     box-sizing:border-box;
 }
-
+follow-btn{
+    display:inline-block;
+    width:auto;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
 .watch-btn{
     background:#ff0050;
     color:#fff;
