@@ -1,23 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Monsta Live is running!");
+// =====================
+// Follow Buttons
+// =====================
+const followButtons = document.querySelectorAll(".follow-btn");
 
-  const button = document.querySelector(".button");
-
-  if (button) {
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-      alert("Welcome to Monsta Live! More features are coming soon.");
+followButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        if (button.textContent === "Follow") {
+            button.textContent = "Following";
+            button.style.background = "#28a745";
+        } else {
+            button.textContent = "Follow";
+            button.style.background = "#ff008c";
+        }
     });
-  }
 });
+
+// =====================
+// Like Button
+// =====================
 const likeButton = document.querySelector(".like-btn");
 
 if (likeButton) {
-
     let liked = false;
 
     likeButton.addEventListener("click", () => {
-
         liked = !liked;
 
         if (liked) {
@@ -27,7 +33,37 @@ if (likeButton) {
             likeButton.textContent = "❤️ Like";
             likeButton.style.background = "#444";
         }
-
     });
+}
 
+// =====================
+// Live Chat
+// =====================
+const sendBtn = document.getElementById("sendBtn");
+const chatMessage = document.getElementById("chatMessage");
+const chatBox = document.getElementById("chatBox");
+
+if (sendBtn && chatMessage && chatBox) {
+
+    function sendMessage() {
+        const message = chatMessage.value.trim();
+
+        if (message === "") return;
+
+        const p = document.createElement("p");
+        p.innerHTML = "<strong>You:</strong> " + message;
+
+        chatBox.appendChild(p);
+
+        chatMessage.value = "";
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    sendBtn.addEventListener("click", sendMessage);
+
+    chatMessage.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            sendMessage();
+        }
+    });
 }
