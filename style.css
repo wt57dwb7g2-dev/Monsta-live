@@ -341,3 +341,37 @@ nav{
 .follow-btn:hover{
     background:#ff2da0;
 }
+.live-now{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.live-now h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.live-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:20px;
+}
+
+.live-card{
+    background:#1c1c1c;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.live-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.live-card img:first-child{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
