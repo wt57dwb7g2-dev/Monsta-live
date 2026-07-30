@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Live - Monsta Live</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="stream-header">
+    <h1>🔴 Go Live</h1>
+</header>
+
+<div class="go-live-container">
+
+    <h2>Start Your Live Stream</h2>
+
+    <form id="goLiveForm">
+
+        <label>Stream Title</label>
+        <input
+            type="text"
+            id="streamTitle"
+            placeholder="Enter stream title"
+            required
+        >
+
+        <label>Category</label>
+
+        <select id="category">
+            <option>Gaming</option>
+            <option>Music</option>
+            <option>Sports</option>
+            <option>Just Chatting</option>
+            <option>Education</option>
+        </select>
+
+        <label>Thumbnail</label>
+
+        <input type="file">
+
+        <button type="submit">
+            🔴 Start Streaming
+        </button>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+/* ===========================
+   Go Live Page
+=========================== */
+
+.go-live-container{
+    max-width:600px;
+    margin:40px auto;
+    background:#18181b;
+    padding:30px;
+    border-radius:15px;
+}
+
+.go-live-container h2{
+    color:#fff;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.go-live-container label{
+    display:block;
+    color:#ccc;
+    margin:15px 0 8px;
+}
+
+.go-live-container input,
+.go-live-container select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2a2a2d;
+    color:#fff;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.go-live-container input[type="file"]{
+    padding:8px;
+}
+
+.go-live-container button{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#ff0050;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.go-live-container button:hover{
+    background:#ff3377;
+}
