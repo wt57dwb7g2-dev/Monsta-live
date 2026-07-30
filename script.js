@@ -10,3 +10,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+const likeButton = document.querySelector(".like-btn");
+
+if (likeButton) {
+
+    let liked = false;
+
+    likeButton.addEventListener("click", () => {
+
+        liked = !liked;
+
+        if (liked) {
+            likeButton.textContent = "❤️ Liked";
+            likeButton.style.background = "#ff3366";
+        } else {
+            likeButton.textContent = "❤️ Like";
+            likeButton.style.background = "#444";
+        }
+
+    });
+
+}
