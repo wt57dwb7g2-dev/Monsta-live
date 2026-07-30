@@ -1049,3 +1049,25 @@ input:focus{
 .dashboard-btn:hover{
     background:#ff3377;
 }
+.follow-btn,
+.watch-btn{
+    display:block;
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+    text-align:center;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    box-sizing:border-box;
+}
+
+.watch-btn{
+    background:#ff0050;
+    color:#fff;
+}
+
+.watch-btn:hover{
+    background:#ff3377;
+}
