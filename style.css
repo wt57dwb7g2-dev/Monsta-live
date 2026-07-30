@@ -216,3 +216,28 @@ footer {
     text-align:center;
     margin-top:20px;
 }
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.logo{
+    text-align:center;
+}
+
+.search-box{
+    width:100%;
+}
+
+.search-box input{
+    max-width:100%;
+}
+
+nav{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+}
