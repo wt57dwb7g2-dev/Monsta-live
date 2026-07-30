@@ -67,3 +67,30 @@ if (sendBtn && chatMessage && chatBox) {
         }
     });
 }
+// ==========================
+// Login Form
+// ==========================
+
+const loginForm = document.getElementById("loginForm");
+
+if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Login successful!");
+        window.location.href = "profile.html";
+    });
+}
+
+// ==========================
+// Signup Form
+// ==========================
+
+const signupForm = document.getElementById("signupForm");
+
+if (signupForm) {
+    signupForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Account created successfully!");
+        window.location.href = "login.html";
+    });
+}
